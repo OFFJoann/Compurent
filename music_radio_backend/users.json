@@ -1,1 +1,11 @@
-[]
+[
+    {
+        "num_identificacion": "100100",
+        "nombre": "Johan Duque",
+        "correo": "johan@gmail.com",
+        "contrase\u00f1a": "123",
+        "direccion": "Cl 93 ",
+        "ciudad": "Medellin",
+        "telefono": "3000129292"
+    }
+]
