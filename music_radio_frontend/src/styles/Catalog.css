@@ -1,0 +1,94 @@
+.catalog-container {
+  display: flex;
+  flex-direction: column; /* Aseguramos que el encabezado y los álbumes estén uno debajo del otro */
+  justify-content: center;
+  align-items: center; /* Centrar el contenido horizontalmente */
+  padding: 20px;
+  background-color: #181818; /* Color de fondo oscuro */
+  color: white; /* Color del texto blanco */
+  min-height: 100vh; /* Para que ocupe al menos la altura completa de la ventana */
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* Mantiene espacio entre el saludo y el botón de salir */
+  align-items: center; /* Centra verticalmente los elementos en el header */
+  padding: 20px; /* Espacio interno del encabezado */
+  background-color: #333; /* Fondo oscuro estilo GitHub */
+  color: white; /* Color de texto blanco para el saludo */
+  width: 32%;
+}
+
+h1 {
+  margin: 0; /* Elimina el margen por defecto del h1 */
+  font-size: 15px;
+}
+
+.logout-button {
+  background-color: #d44250; /* Color rojo para el botón de salir */
+  color: white; /* Color de texto blanco */
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px; /* Espaciado interno más pequeño */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición para el color de fondo */
+  width: 25%;
+  font-size: 16px; /* Tamaño de fuente más pequeño */
+}
+
+.logout-button:hover {
+  background-color: #9b0312; /* Color más oscuro al pasar el mouse */
+}
+
+.albums {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los álbumes se envuelvan en líneas si es necesario */
+  gap: 20px; /* Espacio entre los álbumes */
+  margin-top: 20px; /* Espacio arriba de los álbumes */
+}
+
+.album-card {
+  background-color: #2b2b2b; /* Fondo oscuro para cada álbum */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  width: 220px; /* Ajusta el ancho del álbum */
+}
+
+.album-card:hover {
+  transform: scale(1.05);
+}
+
+.album-image {
+  width: 100%; /* Hacer que la imagen ocupe todo el ancho del card */
+  height: 220px; /* Altura fija para la imagen */
+  border-radius: 8px;
+  object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+}
+
+.album-name {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #e2e2e2; /* Color gris claro para el nombre del álbum */
+}
+
+.buy-button {
+  background-color: #0c0c0c; /* Color azul para el botón de compra */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #012347; /* Color más oscuro al pasar el mouse */
+}
+
+.buy-button:focus {
+  outline: none; /* Sin contorno al hacer foco en el botón */
+}

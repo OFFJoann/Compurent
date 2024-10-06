@@ -1,11 +1,47 @@
 [
     {
-        "num_identificacion": "100100",
+        "num_identificacion": "100",
         "nombre": "Johan Duque",
         "correo": "johan@gmail.com",
         "contrase\u00f1a": "123",
-        "direccion": "Cl 93 ",
+        "direccion": "Cl 93 B",
         "ciudad": "Medellin",
-        "telefono": "3000129292"
+        "telefono": "31298188"
+    },
+    {
+        "num_identificacion": "1212",
+        "nombre": "adasd",
+        "correo": "asda@gmail.com",
+        "contrase\u00f1a": "wdad",
+        "direccion": "123123",
+        "ciudad": "13213",
+        "telefono": "12313"
+    },
+    {
+        "num_identificacion": "231231",
+        "nombre": "123123",
+        "correo": "123123@gmail.com",
+        "contrase\u00f1a": "12312",
+        "direccion": "123123",
+        "ciudad": "1231",
+        "telefono": "12313"
+    },
+    {
+        "num_identificacion": "1234",
+        "nombre": "Dieg",
+        "correo": "dieho@gmail.com",
+        "contrase\u00f1a": "diego123",
+        "direccion": "clss 93",
+        "ciudad": "medellin",
+        "telefono": "31132323"
+    },
+    {
+        "num_identificacion": "1003355",
+        "nombre": "122",
+        "correo": "13322@gmail.com",
+        "contrase\u00f1a": "12029",
+        "direccion": "11323",
+        "ciudad": "asdasd",
+        "telefono": "21231"
     }
 ]
