@@ -3,7 +3,9 @@ import Usercreated from './Usercreated';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Register.css'
 
+
 function RegistroUsuario() {
+  //Estructura de objeto a enviar para registrar usuario
   const [formData, setFormData] = useState({
     num_identificacion: '',
     nombre: '',
@@ -24,9 +26,9 @@ function RegistroUsuario() {
     });
   };
 
+  // Al momento de enviar formulario este me saca una alerta la cual varia dependiendo de la respuesta de la API
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //
     try {
       const response = await fetch('http://localhost:8000/api/register', {
         method: 'POST',
@@ -37,10 +39,10 @@ function RegistroUsuario() {
       });
       if (response.ok) {
         const result = await response.json();
-        setModalMessage('Usuario registrado correctamente');
+        setModalMessage('Usuario registrado correctamente redireccionando...');
         setTimeout(() => {
           navigate('/');
-        }, 6000);
+        }, 4000);
         console.log(result)
       } else if (response.status === 403) {
         setModalMessage('El usuario ya existe');
@@ -53,7 +55,7 @@ function RegistroUsuario() {
     }
   };
 
-  // Función para cerrar el modal
+  // Función para cerrar la alerta
   const handleCloseModal = () => {
     setModalMessage(null);
     
@@ -100,7 +102,7 @@ function RegistroUsuario() {
         <button type="submit">Registrarme</button>
       </form>
 
-      {/* Mostrar el componente Usercreated si hay un mensaje en modalMessage */}
+
       {modalMessage && <Usercreated onClose={handleCloseModal} message={modalMessage} />}
     </div>
   );

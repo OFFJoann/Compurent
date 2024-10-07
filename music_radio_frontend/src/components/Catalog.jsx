@@ -1,14 +1,15 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Importar useNavigate para redirigir
-import '../styles/Catalog.css'; // Importamos el CSS del componente
+import { useNavigate } from 'react-router-dom'; 
+import '../styles/Catalog.css'; 
 import feidImg from '../styles/images/feid.jpg'; 
 import badbunnyImg from '../styles/images/badbunny.jpg'; 
 import shakiraImg from '../styles/images/shakira.jpg'; 
 
-const Catalog = () => {
-  const navigate = useNavigate(); // Usar useNavigate para redirigir
 
-  // Lista de álbums con su nombre e imagen
+const Catalog = () => {
+  const navigate = useNavigate(); 
+
+  // Lista de álbums
   const albums = [
     {
       id: 1,
@@ -27,11 +28,11 @@ const Catalog = () => {
     },
   ];
 
-  // Función para manejar el cierre de sesión
+  // Maneja el cierre de sesión
   const handleLogout = () => {
-    localStorage.removeItem('authToken'); // Eliminar el token de autenticación
-    localStorage.removeItem('username'); // Eliminar el nombre de usuario
-    navigate('/'); // Redirigir al login
+    localStorage.removeItem('authToken'); 
+    localStorage.removeItem('username'); 
+    navigate('/'); 
   };
 
   return (

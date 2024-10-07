@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Usercreated.css';
 
+// Alerta para cuando se realice registro de usuario y de un mensaje mas explicito sobre la respuesta de la API 
 const Usercreated = ({ onClose, message }) => {
   const [isModalOpen, setIsModalOpen] = useState(true);
 

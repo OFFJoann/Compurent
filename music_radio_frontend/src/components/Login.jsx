@@ -11,6 +11,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
 
+    // Envio y validación de datos de inicio de sesión
     try {
       const response = await fetch('http://localhost:8000/api/login', {
         method: 'POST',
